@@ -368,7 +368,7 @@ class GameScene extends Phaser.Scene {
 
       this.emitter.setPosition(0, 10);
 
-      this.emitter.setBlendMode(Phaser.BlendModes.ADD);
+      //this.emitter.setBlendMode(Phaser.BlendModes.ADD);
       this.player.setVelocityY(-150);
       this.emitter.explode();
     } /*else if (cursors.down.isDown) {
