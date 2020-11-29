@@ -8,12 +8,24 @@ class GuideScene extends Phaser.Scene {
   }
   preload() {
     this.load.image("example", "https://i.imgur.com/jJjlcWY.png");
+    this.load.image("arrows", "https://i.imgur.com/pyCS7Rg.png");
   }
 
   create() {
     this.platforms = this.physics.add.staticGroup();
-    this.tutorial = this.platforms.create(300, 280, "example").setScale(0.8);
+    this.tutorial = this.platforms.create(400, 280, "example").setScale(0.8);
+    this.arrows = this.platforms.create(120, 350, "arrows");
 
+    this.guide = this.add
+    .text(30, 225, "Use the arrows to", {
+      fill: "ddff",
+    }).setScale(1.1)
+    .setStroke("dfefg", 0.8);
+    this.guide = this.add
+    .text(30, 250, "move the ELf!", {
+      fill: "ddff",
+    }).setScale(1.1)
+    .setStroke("dfefg", 0.8);
     this.guide = this.add
       .text(30, 20, "Help the Elf to deliver as many presents as ", {
         fill: "ddff",
