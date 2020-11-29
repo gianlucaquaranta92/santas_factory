@@ -146,11 +146,13 @@ class GameScene extends Phaser.Scene {
         this.anims.pauseAll();
         this.add
           .text(192, 200, "Game Over! ", { fill: "#F5F516" })
-          .setScale(2).setFontSize(20)
+          .setScale(2)
+          .setFontSize(20)
           .setStroke("#DF2323", 3);
         this.add
           .text(180, 300, "Click to Restart ")
-          .setScale(1.5).setFontSize(18)
+          .setScale(1.5)
+          .setFontSize(18)
           .setStroke("#DF2323", 2);
         this.add
           .text(140, 250, "Your Score is: " + gameState.win_score.text)
@@ -368,7 +370,7 @@ class GameScene extends Phaser.Scene {
 
       this.emitter.setPosition(0, 10);
 
-      //this.emitter.setBlendMode(Phaser.BlendModes.ADD);
+      this.emitter.setBlendMode(Phaser.BlendModes.ADD);
       this.player.setVelocityY(-150);
       this.emitter.explode();
     } /*else if (cursors.down.isDown) {
