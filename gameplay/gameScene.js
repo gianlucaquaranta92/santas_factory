@@ -40,10 +40,7 @@ class GameScene extends Phaser.Scene {
     });
   }
   preload() {
-    this.load.image(
-      "particle",
-      "http://labs.phaser.io/assets/particles/cloud.png"
-    );
+    this.load.image("particle", "https://i.imgur.com/Mm3BiJN.png");
     this.load.image("background", "https://i.imgur.com/XO29SNe.png");
 
     this.load.image("presents", "https://i.imgur.com/ky82hMs.png");
